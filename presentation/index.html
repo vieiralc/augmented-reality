@@ -11,6 +11,7 @@
 
   <nav class="menu">
     <ul>
+      <li><a href="#home">Início</a></li>
         <li><a href="#resumo">Resumo</a></li>
         <li><a href="#introducao">Introdução</a></li>
         <li><a href="#modelagem">Modelagem 3D</a></li>
@@ -22,7 +23,7 @@
     </ul>
   </nav>
 
-  <div class="pimg1">
+  <div class="pimg1" id="home">
     <div class="ptext">
       <span class="border">
         Realidade Aumentada
@@ -31,7 +32,7 @@
   </div>
 
   <section id="resumo" class="section section-light">
-    <h2>Resumo</h2>
+    <h2 class="strong">Resumo</h2>
     <p>
         Realidade aumentada (RA), é um conjunto de tecnologias que sobrepõe dados e imagens digitais em objetos e ambientes físicos. Também pode ser entendida como uma visão direta ou indireta ao vivo de um ambiente físico, do mundo real, cujos elementos são aumentados (ou suplementados) por dados sensoriais gerados por computador, como som, vídeo, gráficos ou dados de GPS. É comum que as pessoas confundam a RA com a Realidade Virtual (RV) porém é importante saber distinguir a diferença entre essas duas tecnologias. A RV imerge as pessoas em um ambiente completamente virtual. Já a RA cria uma sobreposição de conteúdo virtual, mas não consegue interagir com o ambiente.
     </p>
@@ -72,72 +73,121 @@
       Existem vários softwares para se criar modelos 3D para a Realidade aumentada, um deles é a famosa plataforma para criação de jogos de computador/video-games Unity. Com Unity é possível criar modelos de uma infinidade de objetos, personagens, etc. Esses modelos depois podem ser usados por uma aplicações que suportam Realidade Aumentada. Uma outra forma de se criar modelos é utilizar o glTF que é um software para transmissão e criação de cenas 3D. Esses modelos/cenas 3D podem ser lidos por uma simples tag da biblioteca AR-JS (que será mostrada mais à frente). Outra forma mais simples ainda é indicar para o AR-JS imagens e até textos para serem sobrepostos. Nesses casos não é necessário criar um modelo 3D.
     </p>
     <p>
-      Além da modelagem de objetos 3D é possível transformar produtos; objetos físicos em modelos 3D para serem utilizados na aplicação como é mostrado no vídeo abaixo:
+      Apesar de ser possível utilizar softwares para modelar os objetos reais em objetos 3D, no vídeo a própria aplicação trata de identificar os objetos reais e duplica-los. Outros softwares para criar modelos 3D são: Blender, MagicaVoxel, AutoDesk Maya e Maxon Cinema4D. Além disso existem sites onde você pode encontrar modelos 3D para download: Sketchfab, Clara.io, Archive3D, Sketchup's 3D Warehouse, TurboSquid e Blender.  Além da modelagem de objetos 3D é possível transformar produtos; objetos físicos em modelos 3D para serem utilizados na aplicação como é mostrado no vídeo abaixo:
     </p> <br>
-    <iframe width="720" height="420" src="https://www.youtube.com/embed/E2VqSMWWDeI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
+    <iframe width="720" height="420" src="https://www.youtube.com/embed/E2VqSMWWDeI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br> <br>
+    
+    <h2 class="strong"></span> A Ferramenta de modelagem do google</h2>
     <p>
-      Apesar de ser possível utilizar softwares para modelar os objetos reais em objetos 3D, no vídeo a própria aplicação trata de identificar os objetos reais e duplica-los. Outros softwares para criar modelos 3D são: Blender, MagicaVoxel, AutoDesk Maya e Maxon Cinema4D. Além disso existem sites onde você pode encontrar modelos 3D para download: Sketchfab, Clara.io, Archive3D, Sketchup's 3D Warehouse, TurboSquid e Blender. 
-    </p>
-    <h2>Modelo 3D criado no blender:</h2>
-    <iframe width="720" height="420" src="https://www.youtube.com/embed/L63Z_V8Du8Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        O Google revelou sua nova ferramenta de modelagem 3D, chamada Blocks, para simplificar o processo de criação de experiências atraentes de realidade virtual (VR) e realidade aumentada (AR). A nova ferramenta, desenvolvida para os headsets HTC Vive e Oculus Rift, funciona permitindo que os usuários criem um objeto 3D em uma tela 3D virtual. O Blocks é projetado de forma que qualquer pessoa, sem qualquer experiência prévia em modelagem, possa usar e se sentir mais como brincar com blocos infantis do que trabalhar com software tradicional de modelagem 3D. Começando com um conjunto simples de formas, uma paleta de cores e um conjunto intuitivo de ferramentas, um usuário poderia criar rapidamente quase tudo o que pudesse imaginar - de um pedaço de melancia a uma cena florestal inteira. Depois que o usuário terminar o modelo 3D, o arquivo pode ser exportado no formato OBJ para uso em aplicativos RA ou RV que estão sendo desenvolvidos. O aplicativo está disponível gratuitamente na Oculus Store e na plataforma Steam. O Google também criou uma página onde os designs dos usuários do bloco são exibidos.
+    </p> <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1TX81cRqfUU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </section>
 
-  <div class="pimg5" id="ar">
+  <div class="pimg4" id="ar">
     <div class="ptext">
       <span class="border">
         Realidade Aumentada
       </span>
     </div>
   </div>
-
+      
   <section class="section section-dark">
     <h2 class="strong">Considerações Iniciais</h2>
     <p>
-      Este trabalho se propõe a esclarecer o conceito de Realidade Aumentada bem como diferencia-lo do conceito de Realidade Virtual trazendo exemplos de aplicalções no mundo do entretenimento e também no mercado de trabalho. Ao longo do trabalho é mostrado como um pequeno projeto de Realidade Aumentada para a web foi criado. 
-    </p><br>
+      Este trabalho se propõe a esclarecer o conceito de Realidade Aumentada (RA) bem como diferencia-lo do conceito de Realidade Virtual (RV) trazendo exemplos de aplicações no mundo do entretenimento e também no mercado de trabalho. Além disso, também é discutido a importância para o profissional de TI de se manter atualizado quanto aos conceitos de RA e RV. Ao longo do trabalho é mostrado como um pequeno projeto de Realidade Aumentada para a web foi criado. 
+    </p> <br>
+      
     <h2 class="strong">Utilização no mundo</h2>
     <p>
-      Combinar gráficos 3D com o mundo real em um espaço 3D é útil, pois aprimora a percepção e a interação do usuário com o mundo real. Além disso, as informações aumentadas, como anotações, instruções de fala, imagens, vídeos e modelos 3D, ajudam o usuário a realizar tarefas reais. Por exemplo: planejamento de neurocirurgia na Harvard Medical School, onde o órgão interno do paciente é sobreposto em 3D sobre o paciente real, permitindo que o cirurgião “veja” dentro da cabeça do paciente. E um computador vestível usado para a implementação do aplicativo de treinamento de indústria.
-    </p><br>
+      Combinar gráficos 3D com o mundo real em um espaço 3D é útil, pois aprimora a percepção e a interação do usuário com o mundo real. Além disso, as informações aumentadas, como anotações, instruções de fala, imagens, vídeos e modelos 3D, ajudam o usuário a realizar tarefas reais. Por exemplo: planejamento de neurocirurgia na Harvard Medical School, onde o órgão interno do paciente é sobreposto em 3D sobre o paciente real, permitindo que o cirurgião “veja” dentro da cabeça do paciente. Outros exemplos de empresas que estão utilizando a tecnologia de RA é mostrado a seguir:
+    </p>
+      
+    <p>
+        <span class="strong"> Snapchat: </span> 
+        com o lançamento do Snapchat Lenses em 2015, o Snapchat foi a primeira empresa de mídia social a trazer com sucesso recursos de RA para sua base de usuários. Nos dois anos seguintes, as lentes se transformaram talvez no recurso mais popular do Snapchat. Ele também se tornou um grande gerador de receita para a empresa, graças à capacidade de marcá-lo para patrociná-lo. O Snapchat continuou a melhorar o valor que as marcas obtêm das lentes de realidade aumentada. No ano passado, a Adweek informou que o Snap está facilitando para os anunciantes dos EUA o patrocínio de lentes que segmentam um grupo específico de informações demográficas, incluindo idade e sexo, além do conteúdo que as pessoas consomem. Anteriormente, as marcas só conseguiam comprar segmentação com foco nacional.
+    </p>
+      
+    <p>
+      <span class="strong">IKEA: </span>
+      Quando se trata de comprar móveis, as visitas à loja sempre foram necessárias para os clientes. No entanto, a IKEA está tentando mudar isso através do uso de realidade aumentada. Em setembro do ano passado, foi lançado o IKEA Place, um aplicativo que permite aos clientes colocar virtualmente móveis dentro de casa. Construído em colaboração com a Apple, o IKEA Place dimensiona automaticamente produtos em ambientes reais com 98% de precisão, de acordo com a empresa. O aplicativo também permite que os usuários capturem e compartilhem fotos e vídeos de móveis virtualmente posicionados com familiares e amigos. Mais de 2.000 itens estavam disponíveis durante o lançamento do aplicativo e a IKEA planeja lançar novas linhas de produtos no futuro. A empresa, há mais de oito décadas, está otimista de que o uso de realidade aumentada aumentará sua lucratividade nos próximos dois anos. De acordo com Digiday, a IKEA está projetando vendas on-line para chegar a US $ 5,9 bilhões até 2020. Para efeitos de comparação, as vendas online renderam US $ 1,6 bilhão em receita total da IKEA em 2016.
+    </p>
+      
+    <p>
+      <span class="strong">Octosense: </span>
+      O Octosense redefine o que é possível quando se trata de experiências AR. Desenvolvem soluções para os desafios associados à criação de uma verdadeira realidade aumentada. A tecnologia Octosense permite que tablets, telefones celulares e HMDs atuais gerem conteúdo 3D realista em tempo real, com um nível de fidelidade visual normalmente reservado para PCs desktop e que reajam às condições de iluminação de qualquer ambiente real em tempo real. Suportando a maioria dos dispositivos móveis da geração atual, fornecem rastreamento e localização robustos de movimento para dispositivos com câmeras rgb (ou seja, sem sensores de profundidade embarcados). Além disso oferecem uma solução completa na forma de uma plataforma unificada que oferece a melhor e mais estável experiência de realidade aumentada para smartphones de detecção de profundidade, HMD e dispositivos ios/android.
+    </p>
+      
+    <p>
+      <span class="strong">Facebook: </span>
+      O Facebook quer disponibilizar o AR para as massas e, com seu tremendo alcance, já tem uma vantagem inicial. É mais fácil para as pessoas experimentarem a RA com o aplicativo que já possuem - Facebook, Instagram e Messenger. Alguns anunciantes do Facebook estão obtendo acesso exclusivo para testar anúncios com efeitos especiais com "toque para experimentar recursos". Quer ver como um par de óculos de sol fica no seu rosto - você pode fazer isso virtualmente com RA. Outra inovação é capacidade de fazer fotos regulares parecerem em 3D. Isso tem potencial para fornecer aplicativos adicionais em RA, como incorporar um objeto 3D como um presente virtual em um post de notícias. Além disso, a RA pode ser usada no Facebook Messenger para visualizar e experimentar produtos.
+    </p> <br>
+          
     <h2 class="strong">Casos de uso da RA</h2>
+    <p>
+      <span class="strong">Mensagens ou conteúdo localizados geograficamente: </span>
+      a capacidade de colocar uma mensagem, objeto ou experiência 3D em um local específico do mundo real, que só pode ser visualizado por meio de um dispositivo nesses locais. Arte do Snapchat, WallaMe, World Brush.
+    </p>
+      
+    <p>
+      <span class="strong">Mobilia:</span> 
+      A capacidade de visualizar um catálogo virtual de móveis, sobrepostos em escala em uma sala que um consumidor gostaria de fornecer, e a capacidade de tomar   decisões de compra compondo vários arranjos de mobília juntos.
+    </p>
+  
+    <p>
+      <span class="strong">Entretenimento localizado geograficamente:</span> 
+      jogos que movem os usuários pelo mundo real para locais específicos para marcar pontos. Pokemon Go, Ingress e Jurassic World Alive.
+    </p>
+  
+    <p>
+      <span class="strong">Wayfinding: </span>
+      Sobreposição de direções de mapeamento de GPS tradicionais para o mundo em vez de em um mapa 2D,para facilitar a navegação e incluir personagens divertidos como HotStepper.
+    </p> <br>
+      
+    <p>
+      <span class="strong">Exibições de produtos de comércio eletrônico:</span> 
+      A Realidade Aumentada sempre foi antecipada para mudar a forma como as pessoas veem o mundo ao seu redor, mas também revolucionará a forma como fazemos compras on-line. Vendo produtos em 3D em sua própria casa antes de comprar, inclusive experimentando virtualmente a pré-compra de roupas para aumentar a experiência do cliente.
+    </p><br>
     
-      <p><span class="strong">Mensagens ou conteúdo localizados geograficamente: </span class="strong">a capacidade de colocar uma mensagem, objeto ou experiência 3D em um local específico do mundo real, que só pode ser visualizado por meio de um dispositivo nesses locais. Arte do Snapchat, WallaMe, World Brush.</p>
-      <p><span class="strong">Mobilia:</span class="strong"> A capacidade de visualizar um catálogo virtual de móveis, sobrepostos em escala em uma sala que um consumidor gostaria de fornecer, e a capacidade de tomar decisões de compra compondo vários arranjos de mobília juntos.</p>
-      <p><span class="strong">Entretenimento localizado geograficamente:</span class="strong"> jogos que movem os usuários pelo mundo real para locais específicos para marcar pontos. Pokemon Go, Ingress e Jurassic World Alive.</p>
-      <p><span class="strong">Wayfinding: </span class="strong">Sobreposição de direções de mapeamento de GPS tradicionais para o mundo em vez de em um mapa 2D,para facilitar a navegação e incluir personagens divertidos como HotStepper.</p>
-      <p><span class="strong">Exibições de produtos de comércio eletrônico:</span class="strong"> A Realidade Aumentada sempre foi antecipada para mudar a forma como as pessoas veem o mundo ao seu redor, mas também revolucionará a forma como fazemos compras on-line. Vendo produtos em 3D em sua própria casa antes de comprar, inclusive experimentando virtualmente a pré-compra de roupas para aumentar a experiência do cliente.</p><br>
-    
+    <img width="720" height="480" src="./img/aplicacoes-ar.jpg" alt="aplicacoes-ar"/> <br> <br>
+
     <h2 class="strong">Ambientes</h2>
     <p>
-      O ambiente de desenvolvimento que utilizado para a criação da aplicação de RA foi um editor de texto (VS Code) com tecnologias web HTML5 e CSS3. Portanto o ambiente da aplição é em um site e pode ser acessado através de um browser.
+      Para rodar aplicações RA não é muito complicado, basta que o usuário tenha um smartphone ou tablet que possua uma camera, com isso o usuário já pode experimentar aplicativos de RA. Na loja de aplicativos de celulares android e ios por exemplo podem ser encontrados vários apps e jogos que utilizam RA. Um exemplo bem conhecido e já citado aqui é o jogo Pokemon Go. Já o ambiente para o desenvolvedor depende da tecnologia que será utilizada. Se se deseja modelar objetos específicos então é recomendado a escolha de um software adequado como o Blender ou o AutoDesk. Mas se não serão utilizados modelos 3D ou já se tem os modelos disponíveis então basta utilizar um software para programação. Alguns exemplos são: ARToolKit, A-Frame, ARjs. Algumas outras tecnologias para desenvolvimento de aplicativos de realidade aumentada são exibidos na imagem a seguir:
     </p><br>
-    <h2 class="strong">AR-JS (Linguagem) e Requisitos para executar</h2>
+          
+    <img src="img/artech.png" alt="artech"/> <br> <br>
+    
+    <h2 class="strong">ARjs (Linguagem) e Requisitos para executar</h2>
     <p>
-      O AR-JS é uma solução eficiente de Realidade Aumentada na Web. Ele é executado 100% no seu navegador, isso significa que nenhum aplicativo precisa ser instalado! Não há necessidade de um dispositivo específico, por ex. Tango ou iphone. Ele é executado em todas as plataformas móveis: Android, iOS11 e Windows Mobile. Você pode usá-lo com seu próprio smartphone.
-
-      Dependendo do seu dispositivo, ele pode rodar muito rápido, até 60fps em telefones de até dois anos. Além disso, o código é de código aberto e está disponível no <a href="https://github.com/jeromeetienne/ar.js">github</a> 
+      O ARjs é uma solução eficiente de Realidade Aumentada na Web. Ele é executado 100% no seu navegador, isso significa que nenhum aplicativo precisa ser instalado! Não há necessidade de um dispositivo específico, por ex. Tango ou iphone. Ele é executado em todas as plataformas móveis: Android, iOS11 e Windows Mobile. Você pode usá-lo com seu próprio smartphone. Dependendo do seu dispositivo, ele pode rodar muito rápido, até 60fps em telefones de até dois anos. Além disso, o código é de código aberto e está disponível no <a href="https://github.com/jeromeetienne/ar.js">github</a> 
     </p><br>
+          
     <h2 class="strong">Padrões</h2>
     <p>
-      O AR-js segue todos os padrões web e recomendações do W3C (World Wide Web Consortium) que é uma comunidade internacional onde os membros organizacionais, uma equipe em tempo integral e o público (desenvolvedores, por exemplo), trabalham juntos para desenvolver os padrões para a criação e a interpretação dos conteúdos para a Web.
+      O ARjs segue todos os padrões web e recomendações do W3C (World Wide Web Consortium) que é uma comunidade internacional onde os membros organizacionais, uma equipe em tempo integral e o público (desenvolvedores, por exemplo), trabalham juntos para desenvolver os padrões para a criação e a interpretação dos conteúdos para a Web.
     </p>
   </section>
 
-  <div class="pimg3" id="mercado">
-      <div class="ptext">
-        <span class="border">
-          Mercado
-        </span>
-      </div>
+  <div class="pimg5" id="mercado">
+    <div class="ptext">
+      <span class="border">
+        Mercado de Trabalho
+      </span>
     </div>
+  </div>
   
-    <section class="section section-light">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
-      </p>
-    </section>
+  <section class="section section-light">
+    <p>
+      Os trabalhos de realidade aumentada e realidade virtual estão se tornando forças muito reais no mercado de trabalho. Nos primeiros nove meses de 2017 já foram cerca de 10 mil postagens solicitando habilidades profissionais em AR/VR nos EUA. Isso representa um aumento relativo de 256% em relação a 2010. Considerando o burburinho em torno dessas tecnologias - que inclui a compra da Oculus pelo Facebook e a decisão pós-Glass do Google de investir US $ 542 milhões na solução de hardware vestível da Magic Leap - fica claro que pessoas qualificadas serão necessárias para continuar o impulso. Entre os empregadores, a maior demanda é proveniente do Facebook. A Accenture também está aumentando a sua contratação para RA/RV. A contratação da empresa de   consultoria para RA e RV aumentou mais de 300% nos últimos dois anos. De longe, o principal papel que envolve RA e RV é o desenvolvedor de software/engenheiro, seguido pelo desenvolvedor de aplicativos móveis, engenheiros de sistemas de computação/arquitetos e outras funções. Em outras palavras, não há nada virtual sobre os trabalhos nesse campo. Eles estão aqui e agora e são muito reais.
+    </p>
+    <img src="img/arjobs.png" alt="ar-jobs"/>
+    <p>
+      O gráfico acima é uma pesquisa da Burning Glass Technologies, eles verificaram as ofertas de trabalho de RA postadas ao longo de 7 anos, começando em 2010. Como pode ser observado no gráfico a procura por profissionais capacitados para trabalhar com tecnologia de RA só tem aumentado. A pesquisa também mostra que as indústrias de informação e manufatura que criam essa tecnologia continuam a buscar as habilidades de RA e RV. Do lado do consumidor, o setor de varejo vem apresentando demanda cada vez maior desde 2015. Outro setor de alto crescimento é o profissional, o científico e o técnico.
+    </p>
+  </section>
   
-  <div class="pimg3" id="experimentos">
+  <div class="pimg6" id="experimentos">
     <div class="ptext">
       <span class="border">
         Experimentos
@@ -145,13 +195,13 @@
     </div>
   </div>
 
-  <section class="section section-light">
+  <section class="section section-dark">
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
     </p>
   </section>
 
-  <div class="pimg3" id="conclusoes"> 
+  <div class="pimg7" id="conclusoes"> 
     <div class="ptext">
       <span class="border">
         Conclusões
@@ -159,13 +209,18 @@
     </div>
   </div>
 
-  <section class="section section-dark">
+  <section class="section section-light">
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
+      A realidade virtual e a realidade aumentada são reflexões inversas umas das outras, em relação ao que cada tecnologia quer realizar. A realidade aumentada sobrepõe elementos virtuais no mundo real, enquanto a realidade virtual recria digitalmente uma configuração da vida real. Realidade Virtual e Realidade Aumentada vão se tornar mainstream em breve. As coisas já estão mudando e, antes que percebamos, estaremos vivendo em um mundo mais virtual do que real.
+      É provável que a realidade aumentada penetre cada vez mais no nosso cotidiano no século XXI. Uma vez que os computadores vestíveis se tornam cada vez mais comuns, não será estranho ver as pessoas interagindo e reagindo a coisas que não estão na sua perspectiva. Graças a tecnologias como a realidade aumentada, a maneira como trabalhamos com dispositivos de computação e pensamos sobre a divisão entre a realidade digital e analógica provavelmente mudará fundamentalmente. No entanto nada está impedindo você de experimentar a realidade aumentada para si mesmo hoje. Basta acessar a loja de aplicativos do smartphone e pesquisar aplicativos "RA". Há muito para tentar, muitos deles gratuitos.
+    </p>
+    
+    <p>
+      A maioria dos especialistas em tecnologia considera a RA como o futuro do design. Quando se trata de desenvolvimento de aplicativos de realidade aumentada, é óbvio que a RA está fornecendo excelentes oportunidades para aumentar efetivamente as experiências do usuário, mesmo além da medida. Todos já sabem a importância dos telefones celulares na sociedade atual. Esses aparelhos se tornaram parte integrante da vida das pessoas, e a RA pode se tornar extensões de seus corpos. Mesmo sem ser intrusivo, há toda a possibilidade de que a tecnologia possa ser ainda mais integrada às vidas humanas. Além da área do design, fica bastante claro, como visto ao longo do trabaho, que inúmeras profissões (e também nossa vida cotidiana) podem ser transformadas radicalmente pela RA. 
     </p>
   </section>
 
-  <div class="pimg3" id="bibliografia">
+  <div class="pimg8" id="bibliografia">
     <div class="ptext">
       <span class="border">
         Bibliografia
@@ -173,10 +228,44 @@
     </div>
   </div>
 
-  <section class="section section-light">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
-    </p>
+  <section class="section section-dark">
+    <h5 class="strong" style="text-align: left"> O que é realidade aumentada </h5>
+    <p>< https://tecnoblog.net/195283/realidade-virtual-aumentada-aplicacao-diferenca-futuro/>.</p>
+    <p>< http://www.realidadeaumentadabrasil.com.br/ >.</p>
+    <p>< http://www.postdigital.cc/blog/artigo/o-que-e-realidade-aumentada-e-como-ela-funciona >.</p> <br>
+    
+    <h5 class="strong" style="text-align: left">  Aplicações de realidade aumentada </h5>
+    <p>< http://www.flexinterativa.com.br/blogflex/quais-as-melhores-aplicacoes-de-realidade-aumentada >.</p>
+    <p>< http://gtthealthcare.com.br/blog/index.php/realidade-aumentada-setor-saude/</p> 
+    <p>< https://www.hypeness.com.br/2014/11/4-exemplos-de-como-a-realidade-aumentada-ja-esta-melhorando-a-nossa-vida/ ></p> <br>
+    
+    <h5 class="strong" style="text-align: left">  Modelagem 3D para Realidade Aumentada </h5>
+    <p>< https://assuntonerd.com.br/2010/02/01/realidade-aumentada-modelagem-3d-no-artoolkit/ >.</p>
+    <p>< https://so3d.com.br/google-lanca-ferramenta-de-modelagem-3d-em-vr-e-ar-gratuita/ >.</p>
+    <p>< https://www.codigofonte.com.br/noticias/google-lanca-ferramenta-3d-para-realidade-virtual >.</p> <br>
+    
+    <h5 class="strong" style="text-align: left">  Realidade aumentada no mundo </h5>
+    <p>< https://exame.abril.com.br/marketing/marcas-usam-a-realidade-virtual-para-alimentar-o-crescimento/ >.</p>
+    <p>< https://portalnovarejo.com.br/2017/06/realidade-virtual-empresas/ >.</p>
+    <p>< https://exame.abril.com.br/marketing/16-usos-inteligentes-de-realidade-aumentada-em-campanhas/ >.</p>
+    <p>< https://imersiovr.wordpress.com/2018/05/11/exemplos-reais-de-empresas-que-usam-realidade-virtual-vr-no-mercado/ >.</p> <br>
+    
+    <h5 class="strong" style="text-align: left">  Casos de uso de realidade aumentada </h5>
+    <p>< https://portalnovarejo.com.br/2017/03/aplicacoes-realidade-virtual-varejo/ >.</p>
+    <p>< https://computerworld.com.br/2018/08/21/7-exemplos-que-mostram-o-potencial-da-realidade-virtual-para-os-negocios/ >.</p>
+    <p>< http://cio.com.br/tecnologia/2018/09/20/realidade-aumentada-comeca-a-se-tornar-realidade-em-operacoes-de-ti/ >.</p> 
+    <p>< https://blogbrasil.westcon.com/realidade-aumentada-na-pratica-como-pode-ser-usada-nos-negocios >.</p> <br>
+    
+    <h5 class="strong" style="text-align: left">  Linguagens/Softwares para Realidade Aumentada </h5>
+    <p>< http://www.linhadecodigo.com.br/artigo/2488/artoolkit-criando-aplicativos-de-realidade-aumentada.aspx >.</p>
+    <p>< https://universidadedatecnologia.com.br/como-fazer-um-app-de-ar-realidade-aumentada/ >.</p> <br>    
+    
+    <h5 class="strong" style="text-align: left">  Mercado de Trabalha de RA </h5>
+    <p>< https://www.youtube.com/watch?v=EvckirgE78w/ >.</p>
+    <p>< https://www.burning-glass.com/blog/augmented-reality-virtual-reality-jobs-become-real/ >.</p>
+    <p>< https://universidadedatecnologia.com.br/augmented-reality-ar-como-negocio/>.</p> 
+    <p>< https://inforchannel.com.br/2018/05/02/mercado-de-realidade-aumentada-chegara-a-us-63-bilhoes-ate-2021/ ></p> <br>
+    
   </section>
 
   <script src="js/index.js"></script>
