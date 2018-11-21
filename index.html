@@ -10,14 +10,17 @@
 
         <!-- Define o corpo e especifica que a camera do dispositivo sera utilizada -->
         <a-scene embedded arjs='sourceType: webcam;'>
-        
+            <a-assets>
+                <a-asset-item id="fly-obj" src="FlyingSaucer.obj"></a-asset-item>
+                <a-asset-item id="fly-mtl" src="FlyingSaucer.mtl"></a-asset-item>
+            </a-assets>
+
             <!-- Define o objeto a ser identificado -->
             <a-marker preset='hiro'>
 
               <!-- Adiciona o aquivo OBJ ao projeto-->
               <a-entity
-                  obj-model="obj: url(./FlyingSaucer.obj); 
-                  mtl: url(./FlyingSaucer.mtl)">
+                  obj-model="obj: #fly-obj; mtl: #fly-mtl">
               </a-entity>
                     
             </a-marker>
