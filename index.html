@@ -12,16 +12,18 @@
         <a-scene embedded arjs=’sourceType: webcam;’>
         
             <!-- Define o objeto a ser identificado -->
-            <a-marker-camera preset=’hiro’>
+            <a-marker preset=’hiro’>
 
               <!-- Adiciona o aquivo OBJ ao projeto-->
-              <a-entity camera
-                  obj-model="obj: url(/FlyingSaucer.obj); 
-                  mtl: url(/FlyingSaucer.mtl)">
+              <a-entity
+                  obj-model="obj: url(./FlyingSaucer.obj); 
+                  mtl: url(./FlyingSaucer.mtl)">
               </a-entity>
                     
-            </a-marker-camera>
-            
+            </a-marker>
+            <a-entity camera>
+            </a-entity>
         </a-scene>
     </body>
+    
 </html>
